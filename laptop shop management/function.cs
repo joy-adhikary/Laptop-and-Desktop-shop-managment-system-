@@ -14,7 +14,8 @@ namespace laptopmanagementshop
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-DRVOJP0; database=mobileshop;integrated security=True";
+            con.ConnectionString = @"data source = DESKTOP-DRVOJP0; database=laptopshop;integrated security=True";
+            //@"data source = habib\sqlexpress ; database = smartphoneshop; integrated security = True";
             return con;
         }
         public DataSet getData(string query)

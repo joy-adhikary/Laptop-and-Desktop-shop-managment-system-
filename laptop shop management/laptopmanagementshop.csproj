@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllUserControl\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\UC_Accessories.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +116,15 @@
     <Compile Include="function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_login.Designer.cs">
+      <DependentUpon>UC_login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllUserControl\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Accessories.resx">
       <DependentUpon>UC_Accessories.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_login.resx">
+      <DependentUpon>UC_login.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

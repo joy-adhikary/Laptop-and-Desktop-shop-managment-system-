@@ -50,5 +50,10 @@ namespace laptopmanagementshop.AllUserControl
                 MessageBox.Show("You Cancelled the operation.", "Back <-", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

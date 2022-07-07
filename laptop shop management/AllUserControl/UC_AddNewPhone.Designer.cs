@@ -199,6 +199,7 @@ namespace laptopmanagementshop.AllUserControl
             "SSD 256GB",
             "SSD 512GB",
             "SSD 1TB",
+            "SSD 2TB",
             "HDD 500GB",
             "HDD 1TB",
             "HDD 2TB",

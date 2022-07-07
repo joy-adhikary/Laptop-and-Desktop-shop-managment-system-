@@ -46,14 +46,7 @@ namespace laptopmanagementshop
             this.btnAddNewPhone = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse8 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_login1 = new laptopmanagementshop.UC_login();
             this.uC_Accessories_Stock1 = new laptopmanagementshop.AllUserControl.UC_Accessories_Stock();
             this.uC_Accessories_Purchase1 = new laptopmanagementshop.AllUserControl.UC_Accessories_Purchase();
             this.uC_Accessories1 = new laptopmanagementshop.AllUserControl.UC_Accessories();
@@ -62,6 +55,16 @@ namespace laptopmanagementshop
             this.uC_Stock1 = new laptopmanagementshop.AllUserControl.UC_Stock();
             this.uC_Customer1 = new laptopmanagementshop.AllUserControl.UC_Customer();
             this.uC_AddNewPhone1 = new laptopmanagementshop.AllUserControl.UC_AddNewPhone();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse8 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse9 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse10 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +92,7 @@ namespace laptopmanagementshop
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(441, 928);
             this.panel1.TabIndex = 0;
+            this.panel1.VisibleChanged += new System.EventHandler(this.panel1_VisibleChanged);
             // 
             // btnStoredaccessories
             // 
@@ -99,13 +103,13 @@ namespace laptopmanagementshop
             this.btnStoredaccessories.CheckedState.Parent = this.btnStoredaccessories;
             this.btnStoredaccessories.CustomImages.Parent = this.btnStoredaccessories;
             this.btnStoredaccessories.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnStoredaccessories.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStoredaccessories.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnStoredaccessories.ForeColor = System.Drawing.Color.White;
             this.btnStoredaccessories.HoverState.Parent = this.btnStoredaccessories;
             this.btnStoredaccessories.Image = ((System.Drawing.Image)(resources.GetObject("btnStoredaccessories.Image")));
             this.btnStoredaccessories.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStoredaccessories.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnStoredaccessories.Location = new System.Drawing.Point(5, 719);
+            this.btnStoredaccessories.Location = new System.Drawing.Point(5, 630);
             this.btnStoredaccessories.Name = "btnStoredaccessories";
             this.btnStoredaccessories.ShadowDecoration.Parent = this.btnStoredaccessories;
             this.btnStoredaccessories.Size = new System.Drawing.Size(240, 45);
@@ -122,13 +126,13 @@ namespace laptopmanagementshop
             this.btnAccessoriespurchase.CheckedState.Parent = this.btnAccessoriespurchase;
             this.btnAccessoriespurchase.CustomImages.Parent = this.btnAccessoriespurchase;
             this.btnAccessoriespurchase.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAccessoriespurchase.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAccessoriespurchase.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAccessoriespurchase.ForeColor = System.Drawing.Color.White;
             this.btnAccessoriespurchase.HoverState.Parent = this.btnAccessoriespurchase;
             this.btnAccessoriespurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnAccessoriespurchase.Image")));
             this.btnAccessoriespurchase.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAccessoriespurchase.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnAccessoriespurchase.Location = new System.Drawing.Point(5, 655);
+            this.btnAccessoriespurchase.Location = new System.Drawing.Point(5, 566);
             this.btnAccessoriespurchase.Name = "btnAccessoriespurchase";
             this.btnAccessoriespurchase.ShadowDecoration.Parent = this.btnAccessoriespurchase;
             this.btnAccessoriespurchase.Size = new System.Drawing.Size(257, 45);
@@ -145,16 +149,16 @@ namespace laptopmanagementshop
             this.btnAccessories.CheckedState.Parent = this.btnAccessories;
             this.btnAccessories.CustomImages.Parent = this.btnAccessories;
             this.btnAccessories.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAccessories.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAccessories.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAccessories.ForeColor = System.Drawing.Color.White;
             this.btnAccessories.HoverState.Parent = this.btnAccessories;
             this.btnAccessories.Image = ((System.Drawing.Image)(resources.GetObject("btnAccessories.Image")));
             this.btnAccessories.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAccessories.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnAccessories.Location = new System.Drawing.Point(5, 589);
+            this.btnAccessories.Location = new System.Drawing.Point(5, 500);
             this.btnAccessories.Name = "btnAccessories";
             this.btnAccessories.ShadowDecoration.Parent = this.btnAccessories;
-            this.btnAccessories.Size = new System.Drawing.Size(216, 45);
+            this.btnAccessories.Size = new System.Drawing.Size(235, 45);
             this.btnAccessories.TabIndex = 10;
             this.btnAccessories.Text = "Accessories";
             this.btnAccessories.Click += new System.EventHandler(this.btnAccessories_Click);
@@ -167,7 +171,7 @@ namespace laptopmanagementshop
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(112, 538);
+            this.btnCancel.Location = new System.Drawing.Point(112, 449);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
             this.btnCancel.Size = new System.Drawing.Size(106, 45);
@@ -183,7 +187,7 @@ namespace laptopmanagementshop
             this.btnVerify.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerify.ForeColor = System.Drawing.Color.White;
             this.btnVerify.HoverState.Parent = this.btnVerify;
-            this.btnVerify.Location = new System.Drawing.Point(5, 538);
+            this.btnVerify.Location = new System.Drawing.Point(5, 449);
             this.btnVerify.Name = "btnVerify";
             this.btnVerify.ShadowDecoration.Parent = this.btnVerify;
             this.btnVerify.Size = new System.Drawing.Size(103, 45);
@@ -203,11 +207,11 @@ namespace laptopmanagementshop
             this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.FocusedState.Parent = this.txtPassword;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
-            this.txtPassword.Location = new System.Drawing.Point(5, 485);
+            this.txtPassword.Location = new System.Drawing.Point(5, 396);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -217,7 +221,6 @@ namespace laptopmanagementshop
             this.txtPassword.Size = new System.Drawing.Size(214, 45);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnMinimize
             // 
@@ -228,8 +231,8 @@ namespace laptopmanagementshop
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.HoverState.Parent = this.btnMinimize;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMinimize.Location = new System.Drawing.Point(134, 30);
+            this.btnMinimize.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnMinimize.Location = new System.Drawing.Point(127, 696);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.ShadowDecoration.Parent = this.btnMinimize;
             this.btnMinimize.Size = new System.Drawing.Size(45, 45);
@@ -245,13 +248,13 @@ namespace laptopmanagementshop
             this.btnDelete.CheckedState.Parent = this.btnDelete;
             this.btnDelete.CustomImages.Parent = this.btnDelete;
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.HoverState.Parent = this.btnDelete;
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDelete.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDelete.Location = new System.Drawing.Point(3, 432);
+            this.btnDelete.Location = new System.Drawing.Point(3, 343);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
             this.btnDelete.Size = new System.Drawing.Size(240, 45);
@@ -268,13 +271,13 @@ namespace laptopmanagementshop
             this.btnCustomerRecords.CheckedState.Parent = this.btnCustomerRecords;
             this.btnCustomerRecords.CustomImages.Parent = this.btnCustomerRecords;
             this.btnCustomerRecords.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCustomerRecords.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCustomerRecords.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCustomerRecords.ForeColor = System.Drawing.Color.White;
             this.btnCustomerRecords.HoverState.Parent = this.btnCustomerRecords;
             this.btnCustomerRecords.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomerRecords.Image")));
             this.btnCustomerRecords.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCustomerRecords.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCustomerRecords.Location = new System.Drawing.Point(3, 366);
+            this.btnCustomerRecords.Location = new System.Drawing.Point(3, 277);
             this.btnCustomerRecords.Name = "btnCustomerRecords";
             this.btnCustomerRecords.ShadowDecoration.Parent = this.btnCustomerRecords;
             this.btnCustomerRecords.Size = new System.Drawing.Size(240, 45);
@@ -291,13 +294,13 @@ namespace laptopmanagementshop
             this.btnStock.CheckedState.Parent = this.btnStock;
             this.btnStock.CustomImages.Parent = this.btnStock;
             this.btnStock.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnStock.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStock.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnStock.ForeColor = System.Drawing.Color.White;
             this.btnStock.HoverState.Parent = this.btnStock;
             this.btnStock.Image = ((System.Drawing.Image)(resources.GetObject("btnStock.Image")));
             this.btnStock.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStock.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnStock.Location = new System.Drawing.Point(3, 302);
+            this.btnStock.Location = new System.Drawing.Point(3, 213);
             this.btnStock.Name = "btnStock";
             this.btnStock.ShadowDecoration.Parent = this.btnStock;
             this.btnStock.Size = new System.Drawing.Size(240, 45);
@@ -314,13 +317,13 @@ namespace laptopmanagementshop
             this.btnCustomers.CheckedState.Parent = this.btnCustomers;
             this.btnCustomers.CustomImages.Parent = this.btnCustomers;
             this.btnCustomers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCustomers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCustomers.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCustomers.ForeColor = System.Drawing.Color.White;
             this.btnCustomers.HoverState.Parent = this.btnCustomers;
             this.btnCustomers.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomers.Image")));
             this.btnCustomers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCustomers.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCustomers.Location = new System.Drawing.Point(3, 235);
+            this.btnCustomers.Location = new System.Drawing.Point(3, 146);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.ShadowDecoration.Parent = this.btnCustomers;
             this.btnCustomers.Size = new System.Drawing.Size(240, 45);
@@ -337,13 +340,13 @@ namespace laptopmanagementshop
             this.btnAddNewPhone.CheckedState.Parent = this.btnAddNewPhone;
             this.btnAddNewPhone.CustomImages.Parent = this.btnAddNewPhone;
             this.btnAddNewPhone.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddNewPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddNewPhone.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewPhone.ForeColor = System.Drawing.Color.White;
             this.btnAddNewPhone.HoverState.Parent = this.btnAddNewPhone;
             this.btnAddNewPhone.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewPhone.Image")));
             this.btnAddNewPhone.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddNewPhone.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddNewPhone.Location = new System.Drawing.Point(0, 168);
+            this.btnAddNewPhone.Location = new System.Drawing.Point(0, 79);
             this.btnAddNewPhone.Name = "btnAddNewPhone";
             this.btnAddNewPhone.ShadowDecoration.Parent = this.btnAddNewPhone;
             this.btnAddNewPhone.Size = new System.Drawing.Size(240, 45);
@@ -360,8 +363,8 @@ namespace laptopmanagementshop
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.HoverState.Parent = this.btnExit;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(19, 30);
+            this.btnExit.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnExit.Location = new System.Drawing.Point(34, 696);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Parent = this.btnExit;
             this.btnExit.Size = new System.Drawing.Size(45, 45);
@@ -374,6 +377,7 @@ namespace laptopmanagementshop
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.uC_login1);
             this.panel2.Controls.Add(this.uC_Accessories_Stock1);
             this.panel2.Controls.Add(this.uC_Accessories_Purchase1);
             this.panel2.Controls.Add(this.uC_Accessories1);
@@ -388,56 +392,25 @@ namespace laptopmanagementshop
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // guna2Elipse1
+            // uC_login1
             // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 30;
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 30;
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 30;
-            this.guna2Elipse4.TargetControl = this;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.BorderRadius = 30;
-            this.guna2Elipse5.TargetControl = this.panel2;
-            // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.BorderRadius = 30;
-            this.guna2Elipse6.TargetControl = this;
-            // 
-            // guna2Elipse7
-            // 
-            this.guna2Elipse7.BorderRadius = 30;
-            this.guna2Elipse7.TargetControl = this;
-            // 
-            // guna2Elipse8
-            // 
-            this.guna2Elipse8.BorderRadius = 30;
-            this.guna2Elipse8.TargetControl = this.panel2;
+            this.uC_login1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.uC_login1.Location = new System.Drawing.Point(-7, -12);
+            this.uC_login1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_login1.Name = "uC_login1";
+            this.uC_login1.Size = new System.Drawing.Size(1484, 1385);
+            this.uC_login1.TabIndex = 8;
+            this.uC_login1.VisibleChanged += new System.EventHandler(this.uC_login1_VisibleChanged);
             // 
             // uC_Accessories_Stock1
             // 
             this.uC_Accessories_Stock1.AutoSize = true;
             this.uC_Accessories_Stock1.BackColor = System.Drawing.Color.White;
-            this.uC_Accessories_Stock1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Accessories_Stock1.Location = new System.Drawing.Point(2, 0);
             this.uC_Accessories_Stock1.Margin = new System.Windows.Forms.Padding(5);
             this.uC_Accessories_Stock1.Name = "uC_Accessories_Stock1";
             this.uC_Accessories_Stock1.Size = new System.Drawing.Size(1528, 913);
             this.uC_Accessories_Stock1.TabIndex = 7;
-            this.uC_Accessories_Stock1.Load += new System.EventHandler(this.uC_Accessories_Stock1_Load);
             // 
             // uC_Accessories_Purchase1
             // 
@@ -511,6 +484,56 @@ namespace laptopmanagementshop
             this.uC_AddNewPhone1.Size = new System.Drawing.Size(1477, 1169);
             this.uC_AddNewPhone1.TabIndex = 0;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 30;
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 30;
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 30;
+            this.guna2Elipse4.TargetControl = this;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 30;
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 30;
+            this.guna2Elipse6.TargetControl = this;
+            // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.BorderRadius = 30;
+            this.guna2Elipse7.TargetControl = this;
+            // 
+            // guna2Elipse8
+            // 
+            this.guna2Elipse8.BorderRadius = 30;
+            this.guna2Elipse8.TargetControl = this.panel2;
+            // 
+            // guna2Elipse9
+            // 
+            this.guna2Elipse9.BorderRadius = 26;
+            this.guna2Elipse9.TargetControl = this.panel2;
+            // 
+            // guna2Elipse10
+            // 
+            this.guna2Elipse10.BorderRadius = 26;
+            this.guna2Elipse10.TargetControl = this.panel2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -567,6 +590,9 @@ namespace laptopmanagementshop
         private Guna.UI2.WinForms.Guna2Button btnStoredaccessories;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse8;
         private AllUserControl.UC_Accessories_Stock uC_Accessories_Stock1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse9;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse10;
+        private UC_login uC_login1;
     }
 }
 

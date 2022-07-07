@@ -29,6 +29,8 @@ namespace laptopmanagementshop
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            panel1.Visible = false;
+
             uC_AddNewPhone1.Visible = false;
             uC_Customer1.Visible = false;
             uC_Stock1.Visible = false;
@@ -89,7 +91,7 @@ namespace laptopmanagementshop
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
-            if(txtPassword.Text=="joy")
+            if(txtPassword.Text=="admin")
             {
                 panel2.Enabled = true;
                 uC_DeletePhoneRecord1.Visible = true;
@@ -122,13 +124,15 @@ namespace laptopmanagementshop
             uC_Accessories_Stock1.BringToFront();
         }
 
-        private void txtPassword_TextChanged(object sender, EventArgs e)
+        private void panel1_VisibleChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void uC_Accessories_Stock1_Load(object sender, EventArgs e)
+        private void uC_login1_VisibleChanged(object sender, EventArgs e)
         {
+            panel1.Visible = true;
+            btnAddNewPhone.PerformClick();
 
         }
     }

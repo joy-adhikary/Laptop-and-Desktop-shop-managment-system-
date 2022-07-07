@@ -313,7 +313,7 @@ namespace laptopmanagementshop.AllUserControl
             this.btnUpdate.Location = new System.Drawing.Point(960, 614);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.ShadowDecoration.Parent = this.btnUpdate;
-            this.btnUpdate.Size = new System.Drawing.Size(146, 45);
+            this.btnUpdate.Size = new System.Drawing.Size(123, 45);
             this.btnUpdate.TabIndex = 28;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -357,7 +357,7 @@ namespace laptopmanagementshop.AllUserControl
             // 
             this.txtPassword.BorderRadius = 25;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "pallab";
+            this.txtPassword.DefaultText = "";
             this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -375,7 +375,6 @@ namespace laptopmanagementshop.AllUserControl
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.SelectionStart = 6;
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
             this.txtPassword.Size = new System.Drawing.Size(306, 45);
             this.txtPassword.TabIndex = 29;

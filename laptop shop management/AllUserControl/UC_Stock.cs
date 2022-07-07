@@ -48,5 +48,10 @@ namespace laptopmanagementshop.AllUserControl
             networklabel.Text = ds.Tables[0].Rows[0][11].ToString();
             pricelabel.Text = ds.Tables[0].Rows[0][12].ToString();
         }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
